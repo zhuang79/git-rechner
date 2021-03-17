@@ -20,7 +20,10 @@ public class Rechner
         
         while (true) {
             // Eingabe
-            op = console.readString("Welche Operation soll durchgeführt werden (+,-)?: ");
+            do {
+                op = console.readString("Welche Operation soll durchgeführt werden (+,-)?: ");
+            } while(!op.equals("+") && !op.equals("-"));
+            
             a = console.readInt("Erste Ganzzahl: ");
             b = console.readInt("Zweite Ganzzahl: ");
             
