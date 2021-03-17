@@ -14,20 +14,25 @@ public class Rechner
     public static void main(String[] args)
     {
         // Einrichtung
-        int a, b, sum;
+        int a, b, result = 0;
+        String op;
         JConsole console = new JConsole();
         
         while (true) {
             // Eingabe
-            console.println("Summe berechnen:");
+            op = console.readString("Welche Operation soll durchgeführt werden (+,-)?: ");
             a = console.readInt("Erste Ganzzahl: ");
             b = console.readInt("Zweite Ganzzahl: ");
             
             // Verarbeitung
-            sum = a + b;
+            if (op.equals("+")) {
+                result = a + b;
+            } else if (op.equals("-")) {
+                result = a - b;
+            }
             
             // Ausgabe
-            console.println("Summe: " + sum);
+            console.println("Ergebnis: " + result);
         }
     }
 
