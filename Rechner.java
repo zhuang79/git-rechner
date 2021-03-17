@@ -15,20 +15,20 @@ public class Rechner
     {
         // Einrichtung
         int a, b, sum;
-        Scanner in = new Scanner(System.in);
+        JConsole console = new JConsole();
         
-        // Eingabe
-        System.out.println("Summe berechnen:");
-        System.out.print("Erste Ganzzahl:");
-        a = in.nextInt();
-        System.out.print("Zweite Ganzzahl:");
-        b = in.nextInt();
-        
-        // Verarbeitung
-        sum = a + b;
-        
-        // Ausgabe
-        System.out.printf("Summe: %d\n", sum);
+        while (true) {
+            // Eingabe
+            console.println("Summe berechnen:");
+            a = console.readInt("Erste Ganzzahl: ");
+            b = console.readInt("Zweite Ganzzahl: ");
+            
+            // Verarbeitung
+            sum = a + b;
+            
+            // Ausgabe
+            console.println("Summe: " + sum);
+        }
     }
 
 }
