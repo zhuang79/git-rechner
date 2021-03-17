@@ -18,6 +18,9 @@ public class Rechner
         String op;
         JConsole console = new JConsole();
         
+        Operator add = (x, y) -> x + y;
+        Operator sub = (x, y) -> x - y;
+        
         while (true) {
             // Eingabe
             do {
@@ -29,9 +32,9 @@ public class Rechner
             
             // Verarbeitung
             if (op.equals("+")) {
-                result = a + b;
+                result = add.calculate(a, b);
             } else if (op.equals("-")) {
-                result = a - b;
+                result = sub.calculate(a, b);
             }
             
             // Ausgabe
