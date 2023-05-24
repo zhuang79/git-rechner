@@ -18,10 +18,14 @@ public class Rechner
         String op;
         JConsole console = new JConsole();
         
-        Operator add = (x, y) -> x + y;
-        Operator sub = (x, y) -> x - y;
-        Operator mul = (x, y) -> x * y;
-        Operator div = (x, y) -> x / y;
+
+        BiFunction add = (x, y) -> x + y;
+        BiFunction sub = (x, y) -> x - y;
+        BiFunction mul = (x, y) -> x * y;
+        BiFunction div = (x, y) -> x / y;
+
+       
+
         
         while (true) {
             // Eingabe
