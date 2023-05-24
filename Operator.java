@@ -8,5 +8,5 @@
 
 public interface Operator
 {
-    int calculate(int a, int b);
+    int calculate(float a, float b);
 }

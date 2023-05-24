@@ -14,7 +14,7 @@ public class Rechner
     public static void main(String[] args)
     {
         // Einrichtung
-        int a, b, result = 0;
+        float a, b, result = 0;
         String op;
         JConsole console = new JConsole();
         
