@@ -20,6 +20,8 @@ public class Rechner
         
         Operator add = (x, y) -> x + y;
         Operator sub = (x, y) -> x - y;
+        Operator mul = (x, y) -> x * y;
+        Operator div = (x, y) -> x / y;
         
         while (true) {
             // Eingabe
