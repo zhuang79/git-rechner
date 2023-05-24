@@ -6,7 +6,7 @@
  * @FunctionalInterface
  */
 
-public interface Operator
+public interface BiFunction<T,U,R>
 {
     int calculate(float a, float b);
 }
